@@ -1,38 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body {
+    overflow-x: hidden;
+}
+
 .App {
-  text-align: center;
+    width: 100%;
+    height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+    display: flex;
+    max-width: 500px;
+    height: 600px;
+    margin-top: -650px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cont__h2 {
+    width: 250px;
+    height: 240px;
+    margin-top: 89px;
+    border-radius: 50%;
+    background: #ebebeb;
+
 }
 
-.App-link {
-  color: #61dafb;
+.nav__cont h2 {
+    font-family: sans-serif;
+    padding-top: 80px;
+    font-size: 65px;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button {
+    display: block;
+    position: relative;
+    padding: 50px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #7d2ae8;
+    transition: all 0.2s ease;
+    border-radius: 50%;
+    margin: 1px auto;
+    margin-top: 10px;
+}
+
+.reset {
+    display: block;
+    padding: 20px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #ff0000;
+    transition: all 0.2s ease;
+    border-radius: 50px;
+    margin: 0 auto;
+    margin-top: -40px;
+    margin-right: 0;
 }
